@@ -1,0 +1,68 @@
+.header{
+    overflow: hidden;
+    border-bottom: 1px solid $greyColor;
+    padding: 20px 0;
+    .logo{
+        position: relative;
+        @media #{$minsmall}  {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$minmedium}  {
+            float: $floatLeft;
+            width: 30%;
+            text-align: left;
+        }
+        
+
+        h1{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        button{
+            display: none;
+            @media #{$maxmobile} {
+                display: block;
+            }
+        }
+        
+    }
+    .nav-bar{
+        padding: 0;
+        overflow: hidden;
+        background-color: $blueColor;
+        border-radius: 15px;
+        @media #{$minsmall}  {
+            width: 100%;
+            float: none;
+            
+        }
+        @media #{$minmedium}  {
+            width:70%;
+            float: $floatLeft;
+        }
+        @media #{$maxmobile} {
+            // display: none;
+        }
+        li{
+            width: 20%;
+            float: $floatLeft;
+            font-size: 18px;
+            text-align: center;
+            @media #{$maxmobile} {
+                display: block;
+                float: none;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                padding: 20px 10px;
+                &:hover{
+                    color: #DDD;
+                }
+            }
+        }
+    }
+}

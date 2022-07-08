@@ -1,0 +1,87 @@
+.footer{
+    background-color: #dddddd;
+    .container{
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 30px;
+        .gallery{
+            float: $floatLeft;
+            
+            @media #{$minsmall} {
+                width: 100%;
+                
+            }
+            @media #{$minmedium} {
+                width: 50%;
+                
+            }
+           .image-box{
+                overflow: hidden;
+                margin-bottom: 5px;
+                img{
+                   float: $floatLeft;
+                   width: 150px; 
+                }
+                .text{
+                    float: $floatLeft;
+                    width: calc(100% - 180px); 
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    h4{
+                        color: $blueColor;
+                    }
+                    p{
+                        color: #3a3737;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        .info{
+            float: $floatLeft;
+            width: 25%;
+            @media #{$maxmobile} {
+                width: 50%;
+                
+            }
+            @media #{$minsmall} {
+                width: 50%;
+                
+            }
+            @media #{$minmedium} {
+                width: 25%;
+                
+            }
+
+            ul{
+                color: #3a3737;
+                line-height: 1.8;
+            }
+            h4{
+                color: #3a3737;
+                font-weight: bold;
+
+            }
+            p{
+                color: #3a3737;
+                margin-top: 8px;
+            }
+        }
+        .contact{
+            float: $floatLeft;
+            width: 25%;
+            input , textarea {
+                border: 1px solid #3a3737;
+                padding: 10px;
+                margin-bottom :5px;
+                border-radius: 10px;
+                width: 100%;
+            }
+            textarea{
+                height:140px;
+            }
+        }
+    }
+}
+ 

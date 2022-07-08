@@ -1,0 +1,126 @@
+.slider{
+    q{
+        font-size: 20px;
+        line-height: 1.7;
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+        width: 80%;
+        margin: 30px auto;
+        display: block;
+    }
+    img{
+       display: block;
+       margin: auto;
+       border-radius: 20px;
+       max-width: 100%;
+    }
+    .bullets{
+        text-align: center;
+        li{
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: #d1d1d1;
+            cursor: pointer;
+            &.active , &:hover{
+                border: 3px solid rgb(75, 73, 73);
+                background-color: white;
+            }
+        }
+    }
+}
+
+
+
+//  services section
+
+
+.services{
+    overflow: hidden;
+    .service-box{
+        float: $floatLeft;
+        width: calc(100% / 3);
+        padding-right: 20px;
+        position: relative;
+        @media #{$maxmobile} {
+            text-align: center;
+            width: 100%;
+            float: none;
+        }
+        @media #{$maxmobile} {
+            svg{
+                display: none;
+                margin-bottom: 15px;
+                position: absolute;
+                left: 44%;
+                transform: translateX(-50%);
+                top: -18px;
+            }
+        }
+        h3{
+            @media #{$maxmobile} {
+                text-align: center;
+            }            
+            svg{
+                font-size: 25px;
+               
+            }
+        }
+        p{
+            color: #777;
+            line-height: 1.5;
+        }
+        a{
+            text-decoration: none;
+            color: $blueColor;
+        }
+    }
+}
+
+
+//   players section
+
+
+.players{
+    height:600px;
+    text-align: center;
+    .player-box{
+        float: $floatLeft;
+        width: calc(96% / 3);
+        padding: 10px;
+        border: 1px solid $greyColor;
+        border-radius: 20px;
+        
+        &:not(:last-of-type){
+            margin-right: 2%;
+
+        }
+        
+        .image{
+            img{
+                max-width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .name{
+            margin-top: 10px;
+            span{
+                font-weight: bold;
+            }
+        }
+        p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #777;
+            line-height: 1.5;
+
+        }
+        a{
+            text-decoration: none;
+            color: $blueColor;
+        }
+    }
+}
+

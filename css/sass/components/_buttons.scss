@@ -1,0 +1,13 @@
+.main-button{
+    color: #fff;
+    background-color: $blueColor;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px 15px ;
+    &:hover {
+        background-color: rgba($blueColor, .8);
+    }
+}
+
+
